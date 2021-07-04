@@ -18,17 +18,24 @@
             font-size: 50px;
             
         }
+        h2{
+            font-family: 'Zen Tokyo Zoo', cursive;
+        }
         .cow{
             display: flex;
             background-image: url(top-banner.png);
             background-repeat: no-repeat;
         }
         .mango{
-            width: 50%;
-            padding-left: 3%;
+            width:40%;
+             margin-left: 5%;
+             padding-left: 2%;
         }
         .mango img{
             width: 110%;
+        }
+        .sap{
+           display: flex;
         }
         .banana{
             text-decoration: none;
@@ -38,44 +45,100 @@
             padding: 10px 30px;
             border-radius:  5px;
         }
-        .snake{
+        .miao{
             display: flex;
-            margin-bottom: 150px;
             background-image: url(dream-bg.png);
             background-repeat: no-repeat;
             background-position: right;
 
         }
+        .experience{
+            display: flex;
+            background-repeat: no-repeat;
+            background-image: url(exp-bg.png);
+            background-position: left;  
+            
+        }
+        .flexible{
+            display: flex;
+            margin-bottom: 150px;
+        }
+        .lichi{
+            width: 40%;
+            box-shadow: 10px 10px 40px gray;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 10px;
+            padding: 100px;
+            
+        }
+        .flexible-container{
+            display: flex;
+            margin-bottom: 100px;
+            margin-left: 8%;
+        }
+        #among{
+            border-left: 7px solid thistle;
+            border-image: linear-gradient(blue cyan);
+            border-image-slice: 1;
+        }
+        #fullst{
+            border-left: 7px solid tomato;
+            border-image: linear-gradient(blue cyan);
+            border-image-slice: 1;
+        }
+        footer p{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <section class="cow">
+    <section class="cow flexible-container">
         <div class="mango">
             <h1>WELCOME TO</h1>
             <h1><span style="color: orange;">HELLNIX</span> WORLD</h1>
             <h3>Build Climber Train Stopper</h3>
              <p>You might saw me jumping, climbing buildings,and stopping trains. But nobody pays me a dime for that work. That's why I am learning and mastering web development. I will not stop until I become the Web Development Hero.</p>
-             <a class="banana"href="https://www.linkedin.com/feed/?trk=onboarding-landing" target="_blank">HIRE ME</a>
+             <a class="banana" href="https://www.linkedin.com/feed/?trk=onboarding-landing" target="_blank">HIRE ME</a>
          </div>
          <div class="mango">
             <img src="my-bg.png" alt="my photo">
          </div>
     </section>
     <!--2nd section-->
-    <section class="snake">
+    <section class="miao flexible-container">
         <div class="mango">
-            <img src="my-bg.png" alt="mine">
-
+            <img src="my-bg.png" alt="">
         </div>
-        <div class="mango">
+        <div class="mango"> 
             <h1>DREAM BIG</h1>
             <h2>Become a Web Developer</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil eligendi ex quaerat sunt voluptate, cupiditate neque numquam itaque eveniet! Sint, iure. Est accusantium inventore in minima excepturi accusamus mollitia tempora quia commodi unde voluptatem placeat, voluptas aliquam aspernatur vel aliquid vitae voluptatibus modi atque? Dolor qui sequi at alias voluptatum.</p>
-            <a class="banana"href="" target="_blank">Download Resume</a>
-
-       </div>
+            <p>I already learned the basic HTML and CSS. I can build any simple website. I can even teach my grandma how to make simple website. My goal is to build 3 websites and learn advanced topics.</p>
+            <a class="banana" href="" target="_blank">Download Resume</a>
+        </div>
+    </section>
+    <!--3rd section-->
+    <h1>experiences</h1>
+    <section class="experience">
+        
+        
+        <div class="flexible-container">
+         <div id="fullst" class="lichi">
+            <h2>FULL STACK WEB DEVELOPER</h2>
+            <h3 style="color: orange;">2021-Present | Pro Level Developer</h3>
+            <p>I am the master of HTML, CSS and Javascript. I know everything needed to make a website function, efficient. I didn't stop with the web. I went beyond with most popular Javascript framework called Vue JS. I even know the deployment, server and security. I will give you 100% web solution.</p>
+         </div>
+         <div id="among" class="lichi">
+            <h2>JUNIOR WEB DEVELOPER</h2>
+            <h3 style="color: orange;">2020-2021 | Programming Hero Learner</h3>
+            <p>They didn't offer me a job. But I made myself as a remove web developer. I made their website and showed it to them. They liked it. And uploaded the content. It was fun working at Programming Hero.</p>
+         </div>
+        </div>
 
 
     </section>
+    <footer>
+        <p>© Hellnix 2021, a Programming Hero initiative</p>
+    </footer>
 </body>
 </html>
